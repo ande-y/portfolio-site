@@ -1,0 +1,65 @@
+@font-face {
+    src: url(neuropol.otf);
+    font-family: neuro;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+}
+p {
+    margin: 0px;
+    color: white;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+.sideNav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px; 
+
+    width: 100wh;
+    height: 30px;
+    background-color: rgb(28, 24, 46); 
+}
+.sideNav img {
+    width: fit-content;
+    height: 100%;
+}
+
+.titleCtnr {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: "x";
+
+    justify-items: center;
+    align-content: center;
+    
+    border: solid red 1px;
+    max-height: 80vh;
+    overflow: hidden;
+}
+.titleCtnr .gridBox {
+    grid-area: x;
+}
+
+
+#titleText {
+    font-family: rubik;
+    color: white;
+}
+#nameText {
+    font-size: 4em;
+    font-weight: bold;
+}
+#topText {
+    font-size: 1.5em;
+}
+#occupationText {
+    font-size: 1.5em;
+}
+
