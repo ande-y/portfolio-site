@@ -1,23 +1,28 @@
+// TITLE CARD OCCUPATION LOOPER
+
 const text = document.getElementById("occupationText");
 
-const timeInterval = 3500;
-setInterval(textVanish, timeInterval);
+setInterval(textChange, 4000);
 
-let index = 0;
+let iA = 0;
 const occupations = ["Computer Science Major",
                      "Video Game Developer",
-                     "Illustrator & Graphic Artist",
+                     "Illustrator & Graphics Artist",
                      "Full Stack Web Developer"];
 
-function textVanish(){
-    text.classList.remove("appearing");
-    text.classList.add("fading");
-    console.log("yes");
-
-    setTimeout(textAppear, 500);
+function textChange(){
+    iA = (iA + 1) % occupations.length;
+    text.textContent = occupations[iA];
 }
-function textAppear(){
-    index = (index + 1) % occupations.length;
-    text.textContent = occupations[index];
-    text.classList.replace("fading", "appearing");
+
+// GALLERY ANIMATION PLAYERS
+
+const gall = document.getElementsByClassName("gallery");
+
+setInterval(changeImg, 6000);
+
+let iB = 0;
+
+function changeImg(){
+    
 }

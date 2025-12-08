@@ -1,0 +1,20 @@
+div {
+    border: dotted red 3px;
+}
+
+#b1 {
+    width: min-content;
+    overflow: hidden;
+}
+#b2 {
+    width: min-content;
+}
+
+@keyframes myAnim {
+    from {margin-left: 0%;}
+    to {margin-left: 100px;}
+}
+.slideAnim {
+    animation: myAnim 1s ease 2s forwards;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}

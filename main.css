@@ -43,19 +43,12 @@
 }
 
 @keyframes fade {
-    from {opacity: 1;}
-    to {opacity: 0;}
+    40% {opacity: 1;}
+    50% {opacity: 0;}
+    60% {opacity: 1;}
 }
-.fading {
-    animation: fade .5s ease-in forwards; 
-}
-
-@keyframes appear {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-.appearing {
-    animation: appear .5s ease-in forwards; 
+#occupationText {
+    animation: fade 4s ease-in 2s infinite forwards; 
 }
 
 /* SELF INTRODUCTION */
@@ -67,13 +60,13 @@
 
 /* GALLERY */
 
-.galleryGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    justify-content: center;
-    gap: 1em;
-}
-.galleryGrid .box {
+.gallery {
+    z-index: -1;
     border: solid red 1px;
-    height: 100px;
+    height: 500px;
+    width: 50vw;
+
+    position: absolute;
+    bottom: -40vh;
+    left: 30vw;
 }
