@@ -4,50 +4,17 @@ header {
     top: 0;
 }
 .sideNav {
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px; 
-
     width: 100wh;
     height: 30px;
-    background-color: rgb(28, 24, 46); 
+    padding: 10px; 
+
+    display: flex;
+    justify-content: flex-end;
+    gap: .5em;
+
+    background: linear-gradient(to right, white, black)
 }
 .sideNav img {
     width: fit-content;
     height: 100%;
 }
-
-.titleCtnr {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-areas: "x";
-
-    justify-items: center;
-    align-content: center;
-    
-    border: solid red 1px;
-    max-height: 80vh;
-    overflow: hidden;
-}
-.titleCtnr .gridBox {
-    grid-area: x;
-}
-
-
-#titleText {
-    font-family: rubik;
-    color: white;
-    text-shadow: 3px 3px 0px black;
-}
-#nameText {
-    font-size: 4em;
-    font-weight: bold;
-}
-#topText {
-    font-size: 1.5em;
-}
-#occupationText {
-    font-size: 1.5em;
-}
-
