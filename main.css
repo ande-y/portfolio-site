@@ -3,7 +3,7 @@
 
 .titleCard {
     /* border: solid red 1px; */
-    height: 60vh;
+    height: 70vh;
 
     display: grid;
     justify-content: center;
@@ -18,7 +18,7 @@
 }
 
 .titleText {
-    height: 35vh;
+    height: 25vh;
     width: 50vw;
     min-width: 450px;
     /* border: solid red 1px; */
@@ -34,9 +34,6 @@
     font-size: 4.5rem;
     font-weight: bold;
     text-shadow: 5px 5px 0px black;
-}
-#topText {
-    font-size: 2rem;
 }
 #occupationText {
     font-size: 2rem;

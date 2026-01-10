@@ -7,7 +7,7 @@ setInterval(textChange, 4000);
 let iA = 0;
 const occupations = ["Computer Science Major",
                      "Video Game Developer",
-                     "Illustrator & Graphics Artist",
+                     "Illustrator & Graphic Artist",
                      "Full Stack Web Developer"];
 
 function textChange(){
@@ -24,5 +24,5 @@ setInterval(changeImg, 6000);
 let iB = 0;
 
 function changeImg(){
-    
+    console.log("yuh")
 }
