@@ -11,7 +11,9 @@
 
 .titleCard {
     /* border: solid red 1px; */
-    height: 90vh;
+    height: 100vh;
+    position: relative;
+    top: -70px;
 
     display: grid;
     justify-content: center;
@@ -24,9 +26,8 @@
     grid-row: 1 / 2;
     grid-column: 1 / 2;
 }
-
 .titleText {
-    height: 25vh;
+    /* height: 25vh; */
     width: 50vw;
     min-width: 450px;
 
@@ -37,9 +38,6 @@
     font-family: Rubik;
     text-shadow: 3px 3px 0px black;
 }
-#occupationText {
-    font-size: 2rem;
-}
 
 @keyframes fade {
     40% {opacity: 1;}
@@ -47,18 +45,14 @@
     60% {opacity: 1;}
 }
 #occupationText {
+    font-size: 2rem;
     animation: fade 4s ease-in 2s infinite forwards; 
 }
 
-#titleIcons {
-    max-height: 40px;
+#socialMedia img {
     margin-top: 30px;
+    height: 40px;
 }
-#titleIcons img {
-    width: fit-content;
-    height: 100%;
-}
-
 
 /* SELF INTRODUCTION */
 
@@ -76,6 +70,6 @@
     width: 50vw;
 
     position: absolute;
-    bottom: -40vh;
-    left: 30vw;
+    top: 0vh;
+    left: 25vw;
 }
