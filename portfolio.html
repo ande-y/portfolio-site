@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="general.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="footer.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -15,12 +16,12 @@
 
 <body>
   
-  <header id="overlap">
+  <header>
     <div class="navBar">
-      <p>About Me</p>
-      <p>My Code</p>
-      <p>My Art</p>
-      <p>Contact Me</p>
+      <button onclick="scrollPage(`aboutMe`)"><p>About Me</p></button>
+      <button onclick="scrollPage(`myCode`)"><p>My Code</p></button>
+      <button onclick="scrollPage(`myArt`)"><p>My Art</p></button>
+      <button onclick="scrollPage(`contactMe`)"><p>Contact Me</p></button>
     </div>
   </header>
 
@@ -69,7 +70,7 @@
   
     <br><br><br><br><br>
 
-    <div class="sectionBox">
+    <div class="sectionBox" id="myCode">
       <h2>My Programming Experience</h2>
       <hr>
 
@@ -87,7 +88,7 @@
     <div style="position: relative; width: 0; height: 0">
       <div class="gallery"></div>
     </div>
-    <div class="sectionBox">
+    <div class="sectionBox" id="myArt">
       <h2>My Art</h2>
       <hr>
       
@@ -108,10 +109,12 @@
 
   <br><br><br><br><br>
 
-  <footer>
-
+  <footer id="contactMe">
+    
+    <h2>Contact Me</h2>
   </footer>
   
+
   <script src = "portfolio.js"></script>
 
 </body>

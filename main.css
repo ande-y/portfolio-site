@@ -1,3 +1,10 @@
+main {
+    /* this fixes justify center for safari */
+    margin: auto; 
+    /* justify-self: center; */
+    width: 60vw;
+}
+
 /* GENERAL CLASSES */
 
 .sectionBox {
