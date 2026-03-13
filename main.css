@@ -5,6 +5,7 @@ main {
     width: 60vw;
 }
 
+
 /* GENERAL CLASSES */
 
 .sectionBox {
@@ -14,13 +15,15 @@ main {
     border-radius: 10px;
 }
 
+
 /* TITLE CARD, name job & background anim*/
 
 .titleCard {
     /* border: solid red 1px; */
     height: 100vh;
     position: relative;
-    top: -70px;
+    /* Needed to fill gap left by the navBar */
+    top: -10px; 
 
     display: grid;
     justify-content: center;
@@ -61,16 +64,10 @@ main {
     height: 40px;
 }
 
-/* SELF INTRODUCTION */
-
-#aboutMe {
-    display: flex;
-    gap: 2em;
-}
 
 /* GALLERY */
 
-.gallery {
+.floatingGallery {
     z-index: -1;
     border: solid red 1px;
     height: 500px;

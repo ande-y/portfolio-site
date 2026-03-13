@@ -1,0 +1,24 @@
+header {
+    position: sticky; 
+    top: 20px;
+    margin-left: 20px;
+}
+
+#menuContainer {
+    display: flex; 
+    align-items: center;
+    /* justify-content: space-evenly; */
+    gap: .5em;
+
+    border-radius: 10px;
+    padding: 10px;
+
+    width: 45px;
+    overflow: hidden;
+    background: radial-gradient(rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.5));
+
+    transition: all .5s ease-in-out;
+}
+#menuContainer:hover {
+    width: 100%;
+}

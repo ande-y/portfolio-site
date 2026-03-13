@@ -1,8 +1,8 @@
-
 header {
     margin: auto;
     padding-top: 10px;
     width: fit-content;
+    height: 0px;
 
     z-index: 1;
     position: sticky;
@@ -19,15 +19,4 @@ header {
     background: radial-gradient(rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.5));
     /* background: rgba(255, 255, 255, 0.5); */
     border-radius: 10px;
-}
-.navBar p {
-    border-radius: 7px;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 5px 10px 2px 10px;
-}
-.navBar button {
-    background-color: rgba(255, 255, 255, 0);
-    /* border: solid red 1px; */
-    border: none;
-    padding: 0px;
 }
