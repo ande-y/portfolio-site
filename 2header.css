@@ -7,18 +7,24 @@ header {
 #menuContainer {
     display: flex; 
     align-items: center;
-    /* justify-content: space-evenly; */
-    gap: .5em;
+    gap: .7em;
 
     border-radius: 10px;
     padding: 10px;
 
     width: 45px;
     overflow: hidden;
-    background: radial-gradient(rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.5));
+    background: radial-gradient(rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.8));
+    /* backdrop-filter: invert(100%); */
 
     transition: all .5s ease-in-out;
 }
 #menuContainer:hover {
     width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#menuContainer p {
+    white-space: nowrap;
+    color: inherit
 }

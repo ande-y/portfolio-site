@@ -1,0 +1,12 @@
+#aboutMe {
+    display: grid;
+    grid-template-areas: 
+        "b1 b2"
+        "b1 b3";
+    gap: 20px;
+}
+
+#aboutMe div {
+    background-color: red;
+    /* background: radial-gradient(rgba(255, 255, 255, 0) 40%, rgba(0, 0, 0, 0.8)); */
+}

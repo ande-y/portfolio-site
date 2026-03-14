@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="2general.css">
   <link rel="stylesheet" href="2header.css">
   <link rel="stylesheet" href="2titleCard.css">
-  <!-- <link rel="stylesheet" href="2main.css">
-  <link rel="stylesheet" href="2footer.css"> -->
+  <link rel="stylesheet" href="2aboutMe.css">
+  <link rel="stylesheet" href="2footer.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -25,42 +25,86 @@
           <img id="menuButton" src="./icons/menu bars.svg">
         </div>
 
-        <button>
-          <p>About</p>
+        <button onclick="scrollPage('aboutMe')">
+          <p>About Me</p>
         </button>
 
-        <button>
+        <button onclick="scrollPage('projects')">
           <p>Projects</p>
         </button>
 
-        <button>
+        <button onclick="scrollPage('skills')">
           <p>Skills</p>
         </button>
 
-        <button>
-          <p>Creative</p>
+        <button onclick="scrollPage('creativeWork')">
+          <p>Creative Work</p>
         </button>
 
-        <button>
-          <p>Contact</p>
+        <button onclick="scrollPage('contactMe')">
+          <p>Contact Me</p>
         </button>
 
       </div>
     </div>
   </header>
 
-  <div id="titleCard" class="debug">
-    <div>
-      abc
+  <div id="titleCard" class=>
+    <div style="display: flex; justify-content: center; align-items: center; height: inherit;">
+      <h1 style="color: white;">Andy Cheng</h1>
     </div>
-
   </div>
 
   <main>
+
+    <div id="aboutMe" class="sect debugBorder">
+      <div style="grid-area: b1">
+        <p>sample</p>
+      </div>
+      <div style="grid-area: b2">
+        <p>sample</p>
+      </div>
+      <div style="grid-area: b3">
+        <p>sample</p>
+      </div>
+    </div>
+
+    <div id="projects" class="sect debugBorder placeholder"></div>
+
+    <div id="skills" class="sect debugBorder placeholder"></div>
+
+    <div id="creativeWork" class="sect debugBorder placeholder"></div>
+
+    <div id="contactMe" class="sect debugBorder placeholder"></div>
+
   </main>
+
+  <br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br>
+
+  <div id="parent" class="debugBorder">
+    <div style="grid-area: b1;"><img src="media/placeholder.gif"></div>
+    <div style="grid-area: b2;"><img src="media/placeholder.gif"></div>
+    <div style="grid-area: b3;"><img src="media/placeholder.gif"></div>
+    <div style="grid-area: b4;"><img src="media/yink.png"></div>
+    
+    <div id="child" class="debugBorder" style="grid-area: b4;">
+      <p>testing 123 testing 123</p>
+    </div>
+  </div>
 
   <footer>
   </footer>
 
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <script src = "2script.js"></script>
+
 </body>
