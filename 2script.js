@@ -1,7 +1,7 @@
 function scrollPage(destName){
-    let offset = 100;
     let dest = document.getElementById(destName);
     let rect = dest.getBoundingClientRect();
+    let offset = window.innerHeight * .1;
     window.scrollTo({
         left: 0, 
         top: rect.top + window.scrollY - offset, 

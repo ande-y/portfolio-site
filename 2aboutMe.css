@@ -1,12 +1,12 @@
 #aboutMe {
-    display: grid;
-    grid-template-areas: 
-        "b1 b2"
-        "b1 b3";
-    gap: 20px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
 }
 
-#aboutMe div {
-    background-color: red;
-    /* background: radial-gradient(rgba(255, 255, 255, 0) 40%, rgba(0, 0, 0, 0.8)); */
+#photo {
+    width: fit-content;
+}
+#photo img {
+    min-width: 300px;
 }

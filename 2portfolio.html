@@ -21,86 +21,112 @@
     <div style="position: absolute;">
       <div id="menuContainer">
 
-        <div style="padding: 5px 10px 2px 10px; margin-right: 5px;">
-          <img id="menuButton" src="./icons/menu bars.svg">
+        <div style="padding: 5px 10px 2px 10px; margin-right: 5px; filter: invert(100%);">
+          <img src="./icons/menu bars.svg">
         </div>
 
-        <button onclick="scrollPage('aboutMe')">
-          <p>About Me</p>
-        </button>
-
-        <button onclick="scrollPage('projects')">
-          <p>Projects</p>
-        </button>
-
-        <button onclick="scrollPage('skills')">
-          <p>Skills</p>
-        </button>
-
-        <button onclick="scrollPage('creativeWork')">
-          <p>Creative Work</p>
-        </button>
-
-        <button onclick="scrollPage('contactMe')">
-          <p>Contact Me</p>
-        </button>
+        <button onclick="scrollPage('aboutMe')"><p>About Me</p></button>
+        <button onclick="scrollPage('projects')"><p>Projects</p></button>
+        <button onclick="scrollPage('skills')"><p>Skills</p></button>
+        <button onclick="scrollPage('creativeWork')"><p>Creative Work</p></button>
+        <button onclick="scrollPage('contactMe')"><p>Contact Me</p></button>
 
       </div>
     </div>
   </header>
 
-  <div id="titleCard" class=>
-    <div style="display: flex; justify-content: center; align-items: center; height: inherit;">
-      <h1 style="color: white;">Andy Cheng</h1>
+  <div id="titleCard">
+    <div><img style="min-width: 100vw; min-height: 100vh;" src="media/inverted.gif"></div>
+
+    <div id="name"><h1>ANDY CHENG</h1></div>
+    
+    <div id="horizontalMarquee" class="outlined">
+      <h2>Graphic Artist</h2>
+      <h3 class="thin">&nbsp;✧&nbsp;</h3>
+      <h2>Game Developer</h2>
+      <h3 class="thin">&nbsp;✧&nbsp;</h3>
+      <h2>Web Developer</h2>
+      <h3 class="thin">&nbsp;✧&nbsp;</h3>
+
+      <h2>Graphic Artist</h2>
+      <h3 class="thin">&nbsp;✧&nbsp;</h3>
+      <h2>Game Developer</h2>
+      <h3 class="thin">&nbsp;✧&nbsp;</h3>
+      <h2>Web Developer</h2>
+      <h3 class="thin">&nbsp;✧&nbsp;</h3>
+    </div>
+
+    <div id="verticalMarquee" class="outlined">
+      <h2>C++</h2>
+      <h3 class="thin">&nbsp;✧&nbsp;</h3>
+      <h2>Java</h2>
+      <h3 class="thin">&nbsp;✧&nbsp;</h3>
+      <h2>MySql</h2>
+      <h3 class="thin">&nbsp;✧&nbsp;</h3>
+      <h2>Javascript</h2>
+      <h3 class="thin">&nbsp;✧&nbsp;</h3>
+      <h2>GdScript</h2>
+      <h3 class="thin">&nbsp;✧&nbsp;</h3>
+
+      <h2>C++</h2>
+      <h3 class="thin">&nbsp;✧&nbsp;</h3>
+      <h2>Java</h2>
+      <h3 class="thin">&nbsp;✧&nbsp;</h3>
+      <h2>MySql</h2>
+      <h3 class="thin">&nbsp;✧&nbsp;</h3>
+      <h2>Javascript</h2>
+      <h3 class="thin">&nbsp;✧&nbsp;</h3>
+      <h2>GdScript</h2>
+      <h3 class="thin">&nbsp;✧&nbsp;</h3>
     </div>
   </div>
 
-  <main>
+  <main class="bbb">
 
-    <div id="aboutMe" class="sect debugBorder">
-      <div style="grid-area: b1">
-        <p>sample</p>
+    <div id="aboutMe" class="sect">
+      <div id="photo">
+        <img src="./media/yink.png" style="max-width: 20vw;">
       </div>
-      <div style="grid-area: b2">
-        <p>sample</p>
+
+      <div style="display: flex; flex-direction: column; gap: 40px;">
+        <div>
+          <h3>About Me</h3>
+          <p>
+            A current undergraduate interested a wide range of computer science disciplines.
+            Quick learner with an excellent academic track record poised for versitility and improvement.
+          </p>
+        </div>
+
+        <div>
+          <h3>Education</h3>
+          <p>
+            Currently an undergraduate of Queens College, persuing a Bachelors in Computer Science.
+          </p>
+        </div>
+
+        <div style="justify-self: center;">
+          <a href="files/Resume.pdf" target="_blank">
+            <button><p>View Resume</p></button>
+          </a>
+        </div>
+
       </div>
-      <div style="grid-area: b3">
-        <p>sample</p>
-      </div>
+
     </div>
 
-    <div id="projects" class="sect debugBorder placeholder"></div>
+    <div id="projects" class="sect bbb placeholder"></div>
 
-    <div id="skills" class="sect debugBorder placeholder"></div>
+    <div id="skills" class="sect bbb placeholder"></div>
 
-    <div id="creativeWork" class="sect debugBorder placeholder"></div>
+    <div id="creativeWork" class="sect bbb placeholder"></div>
 
-    <div id="contactMe" class="sect debugBorder placeholder"></div>
+    <div id="contactMe" class="sect bbb placeholder"></div>
 
   </main>
 
   <br><br><br><br><br><br><br><br><br><br>
   <br><br><br><br><br><br><br><br><br><br>
   <br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br>
-
-  <div id="parent" class="debugBorder">
-    <div style="grid-area: b1;"><img src="media/placeholder.gif"></div>
-    <div style="grid-area: b2;"><img src="media/placeholder.gif"></div>
-    <div style="grid-area: b3;"><img src="media/placeholder.gif"></div>
-    <div style="grid-area: b4;"><img src="media/yink.png"></div>
-    
-    <div id="child" class="debugBorder" style="grid-area: b4;">
-      <p>testing 123 testing 123</p>
-    </div>
-  </div>
 
   <footer>
   </footer>

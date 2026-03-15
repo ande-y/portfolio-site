@@ -1,27 +1,31 @@
 header {
+    z-index: 1;
     position: sticky; 
-    top: 20px;
-    margin-left: 20px;
+    top: 40px;
+    margin-left: 40px;
 }
 
 #menuContainer {
     display: flex; 
     align-items: center;
-    gap: .7em;
+    gap: .8em;
 
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding: 10px;
-
     width: 45px;
-    overflow: hidden;
-    background: radial-gradient(rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.8));
-    /* backdrop-filter: invert(100%); */
 
-    transition: all .5s ease-in-out;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: black solid 2px;
+
+    transition: all .3s ease-in-out;
 }
 #menuContainer:hover {
+    padding: 10px 0px 10px 10px;
     width: 100%;
-    background: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
 }
 
 #menuContainer p {
