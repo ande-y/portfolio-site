@@ -1,0 +1,32 @@
+/* #contactMe {
+} */
+
+#contactGrid {
+    display: grid; 
+    grid-template-columns: min-content auto;
+    grid-gap: 10px;
+
+    /* align-items: center; */
+}
+#contactGrid p {
+    margin: 5px 0px 0px 0px;
+    white-space: nowrap;
+    text-align: right;
+    font-weight: bold;
+}
+
+input, textarea {
+    border: solid black 2px;
+    padding: 3px 5px 0px 5px;
+
+    width: 40vw;
+    min-width: 500px;
+
+    font-family: Overpass;
+    font-size: 1rem;
+    line-height: 1.8rem;
+}
+textarea {
+    resize: none;
+    height: 150px;
+}

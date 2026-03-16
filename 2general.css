@@ -8,6 +8,11 @@
     src: url("fonts/Moderniz.otf");
     font-family: Moderniz;
 }
+@font-face {
+    src: url("fonts/TT Travels Trial Medium.otf");
+    font-family: Travels;
+}
+
 
 /* SITE OREINTATION */
 
@@ -19,46 +24,51 @@ body {
 }
 main {
     width: 80vw;
-    justify-self: center;
+    margin: auto;
 }
 
 /* TEXT ELEMENTS */
 
+h1, h2, h3, h4 {
+    font-family: Moderniz;
+    margin: 0px;
+}
 h1 {
     font-size: 7rem;
-    font-family: Moderniz;
-    /* font-weight: bold; */
-    /* text-shadow: 5px 5px 0px black; */
-    margin: 0px;
 }
 h2 {
-    font-family: Moderniz;
     font-size: 4rem;
-    font-weight: bold;
-    margin: 0px;
+    line-height: 6rem;
 }
 h3 {
-    font-family: Moderniz;
     font-size: 2.5rem;
-    font-weight: bold;
-    margin: 0px;
 }
+h4 {
+    font-size: 1.7rem;
+}
+
 p {
-    margin: 0px;
+    margin: 6px 0px 0px 0px;
     font-family: Overpass;
     font-size: 1.4rem;
-    line-height: 1.8rem;
+    line-height: 1.7rem;
 }
 
 /* OTHER HMTL ELEMENTS */
 
+/* form & textarea elts are in contactMe.css */
+a {
+    text-decoration: none;
+}
 button {
-    border: rgba(0, 0, 0, 0) solid 2px;
+    display: flex; 
+    align-items: center;
+    
+    border: transparent solid 2px;
     background-color: black;
-    padding: 5px 10px 2px 10px;
+    padding: 0px 10px 0px 10px;
     margin: 0px;
     
-    font-family: Overpass;
     font-weight: bold;
     color: white;
 
@@ -72,6 +82,14 @@ button:hover {
     backdrop-filter: blur(15px);
 }
 
+button > img {
+    width: 35px;
+    margin-right: 5px;
+}
+button:hover img {
+    filter: invert(100%);
+}
+
 .container {
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.5);
@@ -80,16 +98,14 @@ button:hover {
 /* GENERAL CLASSNAMES */
 
 .sect {
-    height: 80vh;
+    border: blue dotted 1px;
+    margin-bottom: 10vh;
 }
 
 /* DEBUGGING CLASSNAMES */
 
 .bbb {
-    border: red dotted 3px;
-}
-.placeholder {
-    background: radial-gradient(rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0.5));
+    border: red dotted 2px;
 }
 
 /* TESTING */
