@@ -7,7 +7,12 @@
   <title>Andy's Portfolio</title>
   <link rel="stylesheet" href="general.css">
   <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="titleCard.css">
+  <link rel="stylesheet" href="aboutMe.css">
+  <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="skills.css">
+  <link rel="stylesheet" href="creative.css">
+  <link rel="stylesheet" href="contactMe.css">
   <link rel="stylesheet" href="footer.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -17,147 +22,290 @@
 <body>
   
   <header>
-    <div class="navBar">
-      <button onclick="scrollPage('aboutMe')">About Me</button>
-      <button onclick="scrollPage('myCode')">My Code</button>
-      <button onclick="scrollPage('myArt')">My Art</button>
-      <button onclick="scrollPage('contactMe')">Contact Me</button>
+    <div style="position: absolute;">
+      <div id="menuContainer">
+
+        <div style="padding: 5px 10px 2px 10px; margin-right: 8px; filter: invert(100%); aspect-ratio: 1/1;">
+          <img src="./icons/menu bars.svg">
+        </div>
+
+        <button onclick="scrollPage('aboutMe')"><p>About Me</p></button>
+        <button onclick="scrollPage('projects')"><p>Projects</p></button>
+        <button onclick="scrollPage('skills')"><p>Skills</p></button>
+        <button onclick="scrollPage('creative')"><p>Creative</p></button>
+        <button onclick="scrollPage('contactMe')"><p>Contact Me</p></button>
+
+      </div>
     </div>
   </header>
 
-  <div class="titleCard">
-    <div class="overlap">
-      <img src="media/placeholder.gif" style="min-width: 100vw; min-height: 100vh;">
+  <div id="titleCard">
+    <div><img style="min-width: 100vw; min-height: 100vh;" src="media/inverted.gif"></div>
+
+    <div id="name"><h1>Andy Cheng</h1></div>
+    
+    <div id="horizontalMarquee" class="outlined">
+      <h2>Graphic Design</h2>
+      <h2 class="thin">&nbsp;✧&nbsp;</h2>
+      <h2>Front End</h2>
+      <h2 class="thin">&nbsp;✧&nbsp;</h2>
+      <h2>Video Games</h2>
+      <h2 class="thin">&nbsp;✧&nbsp;</h2>
+      <h2>Database Engineer</h2>
+      <h2 class="thin">&nbsp;✧&nbsp;</h2>      
+
+      <h2>Graphic Design</h2>
+      <h2 class="thin">&nbsp;✧&nbsp;</h2>
+      <h2>Front End</h2>
+      <h2 class="thin">&nbsp;✧&nbsp;</h2>
+      <h2>Video Games</h2>
+      <h2 class="thin">&nbsp;✧&nbsp;</h2>
+      <h2>Database Engineer</h2>
+      <h2 class="thin">&nbsp;✧&nbsp;</h2>      
     </div>
 
-    <div class="overlap titleText">
-      <h1>Andy Cheng</h1>
-      <div id="occupationText">Computer Science Major</div>
-      <div id="socialMedia">
-        <a href="https://github.com/ande-y" target="_blank">
-          <img src="icons/github.svg">
-        </a>
-        <a href="https://www.linkedin.com/in/andy-cheng-41405a20a/" target="_blank">
-          <img src="icons/linkedin.svg">
-        </a>
-        <a href="https://www.instagram.com/ander_boi/" target="_blank">
-          <img src="icons/instagram.svg">
-        </a>
-        <a href="https://www.artstation.com/igeon" target="_blank">
-          <img src="icons/artstation.svg">
-        </a>
-      </div>
+    <div id="verticalMarquee" class="outlined">
+      <h2>C++</h2>
+      <h2 class="thin">&nbsp;✧&nbsp;</h2>
+      <h2>Java</h2>
+      <h2 class="thin">&nbsp;✧&nbsp;</h2>
+      <h2>MySql</h2>
+      <h2 class="thin">&nbsp;✧&nbsp;</h2>
+      <h2>Javascript</h2>
+      <h2 class="thin">&nbsp;✧&nbsp;</h2>
+      <h2>GdScript</h2>
+      <h2 class="thin">&nbsp;✧&nbsp;</h2>
 
+      <h2>C++</h2>
+      <h2 class="thin">&nbsp;✧&nbsp;</h2>
+      <h2>Java</h2>
+      <h2 class="thin">&nbsp;✧&nbsp;</h2>
+      <h2>MySql</h2>
+      <h2 class="thin">&nbsp;✧&nbsp;</h2>
+      <h2>Javascript</h2>
+      <h2 class="thin">&nbsp;✧&nbsp;</h2>
+      <h2>GdScript</h2>
+      <h2 class="thin">&nbsp;✧&nbsp;</h2>
     </div>
-
+    
   </div>
 
-  <br><br><br><br><br>
-
   <main>
+    
+    <section id="aboutMe">
+      <div id="photo">
+        <img src="./media/yink.png" style="max-width: 20vw;">
+      </div>
 
-    <div id="aboutMe" style="display: flex; gap: 3em;">
-      <div class="sectionBox">
-        <h2>About Me</h2>
-        <hr>
+      <div style="display: flex; flex-direction: column; gap: 40px;">
         
-        <p>
-          A current undergraduate interested a wide range of computer science disciplines.
-          Quick learner with an excellent academic track record poised for versitility and improvement.
-        </p>
-        <br>
-        
-        <div style="display: flex; justify-content: center; align-items: flex-end;">
+        <div>
+          <h3>About Me</h3>
+          <p>
+            A current undergraduate interested a wide range of computer science disciplines.
+            Quick learner with an excellent academic track record poised for versitility and improvement.
+          </p>
+        </div>
+
+        <div>
+          <h3>Education</h3>
+          <p>
+            Currently an undergraduate of Queens College, persuing a Bachelors in Computer Science.
+          </p>
+          <br>
+
           <a href="files/Resume.pdf" target="_blank">
-            <button>View Resume</button>
+            <button><p>View Resume</p></button>
           </a>
         </div>
 
       </div>
-      <div class="sectionBox">
-          <img src="media/yink.png" style="width: 20rem;">
-      </div>
-    </div>
-
-    <br><br><br><br><br>
-
-    <div class="sectionBox" id="myCode">
-      <h2>My Programming Experience</h2>
-      <hr>
-
-      <p>
-        Admittedly, I only began programming when I declared my major. 
-        My family has never been too knowledgable in tech, 
-        so computers where still quite foreign to me up until college.
-        I made my choice to enter this space because I always knew I 
-        would be passionate in creating something of my own, wether that be 
-        softwares, websites, or games.
-      </p>
-
-      <div style="display: flex; flex-direction: column; align-items: center;">
-        <a href="https://github.com/ande-y" target="_blank">
-          <img src="icons/github.svg">
-        </a>
-      </div>
-
-    </div>
+    </section>
     
-    <br><br><br><br><br>
 
-    <div style="position: relative; width: 0; height: 0">
-      <div class="floatingGallery"></div>
-    </div>
+    <div class="break"></div>
 
-    <div id="myArt" style="display: flex; gap: 3em;">
-      <div class="sectionBox">
-        <h2>My Art</h2>
-        <hr>
-        
-        <p>
-          On the other hand, I've indulged in art for most of my life.
-          I enjoy art simply as a hobby, mainly in the form of 
-          illustrations, character design, and sprites & animation. 
-          I'm still continuing my journey in art, dabbling in some 
-          other avenues like 3d modeling, comic/manga... etc.  
-        </p>
 
-      </div>
-      <div class="sectionBox">
-        
-        gallery images
+    <section id="projects">
+      <h2>✧ Projects</h2>
 
-        <div style="display: flex; flex-direction: column; align-items: center;">
-          <a href="" target="_blank"><button>View More</button></a>
+      <div class="proj">
+        <div class="projBackground" style="grid-area: x;"></div>
+        <div class="projDetails" style="grid-area: x;">
+          <h3>project 1</h3>
+          <p>sample</p><p>sample</p><p>sample</p><p>sample</p><p>sample</p>
         </div>
       </div>
+
+      <div class="proj">
+        <div class="projBackground" style="grid-area: x;"></div>
+        <div class="projDetails" style="grid-area: x;">
+          <h3>project 2</h3>
+          <p>sample</p><p>sample</p><p>sample</p><p>sample</p><p>sample</p>
+        </div>
+      </div>
+
+      <div class="proj">
+        <div class="projBackground" style="grid-area: x;"></div>
+        <div class="projDetails" style="grid-area: x;">
+          <h3>project 3</h3>
+          <p>sample</p><p>sample</p><p>sample</p><p>sample</p><p>sample</p>
+        </div>
+      </div>
+
+      <div class="proj">
+        <div class="projBackground" style="grid-area: x;"></div>
+        <div class="projDetails" style="grid-area: x;">
+          <h3>project 4</h3>
+          <p>sample</p><p>sample</p><p>sample</p><p>sample</p><p>sample</p>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center;">
+        <a href="https://github.com/ande-y" target="_blank">
+          <button>          
+            <img src="icons/github.svg">
+            <p style="margin-top: 5px;">Github</p>
+          </button>
+        </a>
+      </div>
+
+    </section>
+    
+
+    <div class="break"></div>
+
+
+    <section id="skills">
+      <h2>✧ Technical Skills</h2>
+
+      <h3>Languages</h3>
+      <div id="skillList">
+        <div><span><img src="icons/c++.svg"></span><p>C++</p></div>
+        <div><span><img src="icons/java.svg"></span><p>Java</p></div>
+        <div><span><img src="icons/hmtl5.svg"></span><p>HMTL5</p></div>
+        <div><span><img src="icons/css3.svg"></span><p>CSS</p></div>
+        <div><span><img src="icons/javascript.svg"></span><p>JavaScript</p></div>
+        <div><span><img src="icons/mysql.svg"></span><p>MySQL</p></div>
+        <div><span><img src="icons/kotlin.svg"></span><p>Kotlin</p></div>
+        <div><span><img src="icons/godot.svg"></span><p>GDScript</p></div>
+      </div>
+      <br>
+
+      <h3>Tools</h3>
+      <div id="skillList">
+        <div><span><img src="icons/vscode.svg"></span><p>VSCode</p></div>
+        <div><span><img src="icons/vim.svg"></span><p>Vim</p></div>
+        <div><span><img src="icons/mysql.svg"></span><p>MySQL Workbench</p></div>
+        <div><span><img src="icons/godot.svg"></span><p>Godot Engine</p></div>
+        <div><span><img src="icons/android-studio.svg"></span><p>Android Studio</p></div>
+      </div>
+    </section>
+
+
+    <div class="break"></div>
+
+
+    <section id="quote">
+      <h3 style="text-align: center;">sample text</h3>
+      <h3 style="text-align: center;">sample text</h3>
+    </section>
+    
+
+    <div class="break"></div>
+
+
+    <div style="overflow: hidden; max-height: min-content;">
+
+      <div style="position: relative; z-index: -1;">
+        <div style="position: absolute;">
+          <img src="media/inverted.gif" style="min-width: 100vw;">
+        </div>
+      </div>
+
+      <section id="creative">
+        <h2>✧ Creative</h2>
+      
+        <a href="https://github.com/ande-y" target="_blank">
+          <button>          
+            <img src="icons/artstation.svg">
+            <p style="margin-top: 5px;">ArtStation</p>
+          </button>
+        </a>
+      </section>
+    
     </div>
     
+
+    <div class="break"></div>
+    
+
+    <section id="contactMe">
+      <h2>✧ Contact Me</h2>
+
+      <p>Inform me if you want more information on me.</p>
+      <p>Connect with me directly at <i>AndyCheng0814@gmail.com</i></p>
+      <br>
+
+      <div style="display: flex; flex-direction: column; row-gap: 5px; width: max-content;">
+
+        <div id="contactGrid">
+          <p>Your Name: </p>
+          <form><input type="text" placeholder="John Doe"></input></form>
+          
+          <p>Email: </p>
+          <form><input type="email" placeholder="JohnDoe@gmail.com"></input></form>
+          
+          <p>Message: </p>
+          <textarea placeholder="Hello..."></textarea>
+        </div>
+
+        <div style="display: flex; justify-content: end;">
+          <a href="" target="_blank">
+            <button style="margin-top: 10px;"><p>Send Message</p></button>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <div class="break"></div>
+  
   </main>
 
-  <br><br><br><br><br>
-
-  
   <footer>
-    <div style="width: 60vw; margin: auto;">
-      <div id="contactMe">
-        <h2>Contact Me</h2>
-        <p>Andy.Cheng0814@gmail.com</p>
-      </div>
-      <div id="socialMedia">
-        <a href="https://github.com/ande-y" target="_blank">
-          <img src="icons/github.svg">
-        </a>
-        <a href="https://www.linkedin.com/in/andy-cheng-41405a20a/" target="_blank">
-          <img src="icons/linkedin.svg">
-        </a>
-        <a href="https://www.instagram.com/ander_boi/" target="_blank">
-          <img src="icons/instagram.svg">
-        </a>
+    <div id="footerFrame">
+      <div style="display: flex; flex-direction: column; row-gap: 40px;">
+
+        <div id="socials">
+          <a href="https://github.com/ande-y" target="_blank">
+            <img src="icons/github.svg">
+            <h4>Github</h4>
+          </a>
+
+          <a href="https://www.linkedin.com/in/andy-cheng-41405a20a/" target="_blank">
+            <img src="icons/linkedin.svg">
+            <h4>Linkedin</h4>
+          </a>
+
+          <a href="https://www.instagram.com/ander_boi/" target="_blank">
+            <img src="icons/instagram.svg">
+            <h4>Instagram</h4>
+          </a>
+
+          <a href="https://www.artstation.com/igeon" target="_blank">
+            <img src="icons/artstation.svg">
+            <h4>Artstation</h4>
+          </a>
+        </div>
+
+        <p style="color: white;">@2026 - Andy Cheng | All Rights Reserved ©</p>
+      
       </div>
     </div>
   </footer>
-  
 
-  <script src = "portfolio.js"></script>
+  <script src = "script.js"></script>
 
 </body>

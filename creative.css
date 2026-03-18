@@ -1,0 +1,10 @@
+#creative {
+    margin: 50px auto 50px auto;
+
+    overflow: hidden;
+}
+
+#creative h2{
+    color: white;
+    mix-blend-mode: difference;
+}

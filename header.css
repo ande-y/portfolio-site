@@ -1,22 +1,35 @@
 header {
-    margin: auto;
-    padding-top: 10px;
-    width: fit-content;
-    height: 0px;
-
     z-index: 1;
-    position: sticky;
-    top: 0;
+    position: sticky; 
+    top: 40px;
+    margin-left: 40px;
 }
-.navBar {
-    height: auto;
+
+#menuContainer {
+    display: flex; 
+    align-items: center;
+    gap: .8em;
+
     padding: 10px;
+    width: 45px;
 
-    display: flex;
-    justify-content: space-evenly;
-    gap: .5em;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    border: black solid 2px;
 
-    background: radial-gradient(rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.5));
-    /* background: rgba(255, 255, 255, 0.5); */
-    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+#menuContainer:hover {
+    padding: 10px 0px 10px 10px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: transparent solid 2px;
+}
+
+#menuContainer p {
+    white-space: nowrap;
+    color: inherit;
+    font-size: 1.25rem;
 }

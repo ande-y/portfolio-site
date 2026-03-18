@@ -1,0 +1,21 @@
+.proj {
+    display: grid;
+    grid-template-areas: "x";
+
+    height: 70px;
+    padding: 0px 0px 20px 0px;
+    
+    transition: all .2s ease-out;
+}
+.proj:hover {
+    height: 50vh;
+}
+
+.projBackground {
+    background: linear-gradient(rgba(0, 0, 0, 0.25) 0%, transparent 100%); 
+}
+
+.projDetails {
+    overflow: hidden;
+    padding: 20px;
+}

@@ -1,5 +1,9 @@
 div {
     border: dotted red 3px;
+    transition: all 1s ease-in-out;
+}
+div:hover {
+    height: 20vh;
 }
 
 #b1 {

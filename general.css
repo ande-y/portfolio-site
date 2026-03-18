@@ -1,76 +1,108 @@
-/* FONTS */
+/* FONT IMPORTS */
 
 @font-face {
-    src: url(neuropol.otf);
-    font-family: neuro;
+    src: url("fonts/Brigends Expanded.otf");
+    font-family: Brigends;
+}
+@font-face {
+    src: url("fonts/Moderniz.otf");
+    font-family: Moderniz;
+}
+@font-face {
+    src: url("fonts/TT Travels Trial Medium.otf");
+    font-family: Travels;
 }
 
 
-/* SITE COMPARTMENTS */
+/* SITE OREINTATION */
 
+html {
+    background-color: rgb(255, 255, 255);
+}
 body {
-    background-color: rgb(0, 0, 0);
     margin: 0px;
 }
 
+section {
+    /* border: blue dotted 1px; */
+    width: 80vw;
+    margin: auto;
+}
 
-/* TEXT ELTS */
+/* TEXT ELEMENTS */
 
-h1 {
-    font-size: 5rem;
-    font-weight: bold;
-    text-shadow: 5px 5px 0px black;
+h1, h2, h3, h4 {
+    font-family: Moderniz;
     margin: 0px;
+}
+h1 {
+    font-size: 7rem;
 }
 h2 {
-    color: white;
-    font-family: Overpass;
+    font-size: 4rem;
+    line-height: 6rem;
+}
+h3 {
     font-size: 2.5rem;
-    font-weight: bold;
-    margin: 0px;
 }
+h4 {
+    font-size: 1.7rem;
+}
+
 p {
-    margin: 0px;
-    
+    margin: 6px 0px 0px 0px;
     font-family: Overpass;
-    font-size: 1.15rem;
-    line-height: 1.8rem;
-    color: white;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+
+div.break {
+    margin: 320px;
+}
+
+/* OTHER HMTL ELEMENTS */
+/* form & textarea elts are in contactMe.css */
+
+a {
+    text-decoration: none;
 }
 button {
-    border: none;
-    border-radius: 7px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px 10px 2px 10px;
+    display: flex; 
+    align-items: center;
+    
+    border: transparent solid 2px;
+    background-color: black;
+    padding: 0px 10px 0px 10px;
     margin: 0px;
     
-    font-family: Overpass;
-    font-size: 1.15rem;
-    line-height: 1.8rem;
+    font-weight: bold;
     color: white;
-}
-button {
+
     transition: all .2s ease-in-out;
 }
 button:hover {
-    transform: scale(1.02);
+    border: black solid 2px;
+    transform: scale(1.05);
     background-color: rgba(255, 255, 255, 0.5);
     color: black;
+    backdrop-filter: blur(15px);
 }
 
-
-/* WHITESPACE ELTS */
-
-hr {
-    margin-top: 0px;
-    min-width: 100%;
+button > img {
+    width: 35px;
+    margin-right: 5px;
 }
-br {
-    padding: 50px;
-}
-div {
-    /* border: dotted red 3px; */
-    color: white;
+button:hover img {
+    filter: invert(100%);
 }
 
-/* OTHER ELTS */
+.container {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* DEBUGGER CLASSNAMES */
+
+.bbb {
+    border: red dotted 4px;
+}
