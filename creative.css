@@ -6,3 +6,9 @@
     color: white;
     mix-blend-mode: difference;
 }
+
+#textBackground {
+    width: max-content;
+    padding: 10px 20px 10px 20px;
+    backdrop-filter: blur(20px); 
+}

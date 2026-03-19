@@ -30,7 +30,6 @@
 
 
 #horizontalMarquee {
-    position: absolute;
     top: 70vh;
     white-space: nowrap;
     animation: marqueeRightLeft 100s linear infinite;
@@ -48,7 +47,6 @@
 }
 
 #verticalMarquee {
-    position: absolute;
     left: 75vw;
     white-space: nowrap;
     animation: marqueeUpDown 80s linear infinite;

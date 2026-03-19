@@ -65,10 +65,21 @@ div.break {
 
 a {
     text-decoration: none;
+    /* the properties below are needed when <a> encases <button>
+    otherwise the hyperlink will overextend the bounds of <button> 
+    this only occurs when the inner <button> is using display:flex
+    this appears to be a bug */
+    display: flex; 
+    width: min-content;
 }
+a:visited {
+    color: inherit;
+}
+
 button {
     display: flex; 
-    align-items: center;
+
+    width: max-content;
     
     border: transparent solid 2px;
     background-color: black;
@@ -88,7 +99,7 @@ button:hover {
     backdrop-filter: blur(15px);
 }
 
-button > img {
+button img {
     width: 35px;
     margin-right: 5px;
 }

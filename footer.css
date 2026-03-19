@@ -1,20 +1,18 @@
 footer {
-    display: flex;
-    align-items: end;
-
     padding: 20px;
-
     background-color: black;
 }
 
 #footerFrame {
     display: flex;
+    flex-direction: column;
     row-gap: 40px;
 }
 
 #socials {
     display: grid; 
     grid-template-columns: auto auto;
+    max-width: max-content;
     column-gap: 50px;
 }
 
