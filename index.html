@@ -7,7 +7,7 @@
   <title>Andy's Portfolio</title>
   <link rel="stylesheet" href="general.css">
   <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="titleCard.css">
+  <link rel="stylesheet" href="hero.css">
   <link rel="stylesheet" href="aboutMe.css">
   <link rel="stylesheet" href="projects.css">
   <link rel="stylesheet" href="skills.css">
@@ -39,8 +39,8 @@
     </div>
   </header>
 
-  <div id="titleCard">
-    <div><img style="min-width: 100vw; min-height: 100vh;" src="media/inverted.gif"></div>
+  <div id="hero">
+    <img style="min-width: 100vw; min-height: 100vh;" src="media/inverted.gif">
 
     <div id="name"><h1>Andy Cheng</h1></div>
     
@@ -89,6 +89,8 @@
     </div>
     
   </div>
+
+  <div class="break"></div>
 
   <main>
     
@@ -192,13 +194,13 @@
       </div>
       <br>
 
-      <h3>Tools</h3>
+      <h3>Applications</h3>
       <div id="skillList">
         <div><span><img src="icons/vscode.svg"></span><p>VSCode</p></div>
         <div><span><img src="icons/vim.svg"></span><p>Vim</p></div>
         <div><span><img src="icons/mysql.svg"></span><p>MySQL Workbench</p></div>
         <div><span><img src="icons/godot.svg"></span><p>Godot Engine</p></div>
-        <div><span><img src="icons/android-studio.svg"></span><p>Android Studio</p></div>
+        <div><span><img src="icons/android studio.svg"></span><p>Android Studio</p></div>
       </div>
     </section>
 
@@ -207,14 +209,15 @@
 
 
     <section id="quote">
-      <h3 style="text-align: center;">sample text</h3>
-      <h3 style="text-align: center;">sample text</h3>
+      <h3 style="text-align: center;">functionality is great,</h3>
+      <h3 style="text-align: center;">with eye candy, it's better.</h3>
     </section>
     
 
     <div class="break"></div>
 
 
+    <!-- This is the creative section -->
     <div style="overflow: hidden; max-height: min-content;">
 
       <div style="position: relative; z-index: -1;">
@@ -225,7 +228,12 @@
 
       <section id="creative">
         <h2>✧ Creative</h2>
-      
+
+        <div style="width: max-content ;backdrop-filter: blur(10px); padding: 10px 20px 10px 20px;">
+          <p>I makes games, so I make art.</p>
+        </div>
+        <br>
+        
         <a href="https://github.com/ande-y" target="_blank">
           <button>          
             <img src="icons/artstation.svg">
@@ -269,15 +277,14 @@
       </div>
     </section>
 
-
-    <div class="break"></div>
-  
   </main>
 
-  <footer>
-    <div id="footerFrame">
-      <div style="display: flex; flex-direction: column; row-gap: 40px;">
+  <div class="break"></div>
 
+  <footer>
+    <section id="footerFrame">
+
+      <div style="height: 100%; display: flex; flex-direction: column; row-gap: 40px;">
         <div id="socials">
           <a href="https://github.com/ande-y" target="_blank">
             <img src="icons/github.svg">
@@ -301,9 +308,13 @@
         </div>
 
         <p style="color: white;">@2026 - Andy Cheng | All Rights Reserved ©</p>
-      
       </div>
-    </div>
+      
+      <div style="display: flex; flex: 1; justify-content: end; align-items: end;">
+        <p style="color: white; text-align: end;">Built with HTML, CSS, & JS.</p>
+      </div>
+
+    </section>
   </footer>
 
   <script src = "script.js"></script>

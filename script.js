@@ -1,3 +1,5 @@
+// <Header> navbar functionality
+
 function scrollPage(destName){
     let dest = document.getElementById(destName);
     let rect = dest.getBoundingClientRect();
@@ -8,3 +10,7 @@ function scrollPage(destName){
         behavior: "smooth"
     });
 }
+
+// <ContactMe> form submition functionalility
+
+// function 

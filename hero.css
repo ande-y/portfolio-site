@@ -1,15 +1,15 @@
-#titleCard {
+#hero {
     display: grid;
+    grid-area: "x";
     height: 100vh;
-    margin-bottom: 10vh;
 
     overflow: hidden;
-    mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
-#titleCard div {
+
+#hero > * {
     position: relative;
-    grid-row: 1/2; 
-    grid-column: 1/2;
+    grid-area: x; 
 }
 
 #name {
@@ -17,7 +17,7 @@
     justify-content: end;
     align-items: end;
     
-    width: 75vw; 
+    width: 75vw;
     height: 70vh;
 }
 #name h1{
