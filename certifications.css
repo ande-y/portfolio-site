@@ -1,0 +1,18 @@
+.cert {
+    border: solid black 2px;
+    padding: 20px 20px 15px 20px;
+}
+.cert > img {
+    margin-bottom: 10px;
+    max-width: 100%; 
+    box-shadow: black 0px 0px 10px;
+}
+.cert > div {
+    display: flex; 
+    justify-content: space-between;
+}
+.cert > div > p {
+    margin-top: 0px;
+    font-size: 1.1rem;
+    /* color: rgsb(128, 128, 128); */
+}
