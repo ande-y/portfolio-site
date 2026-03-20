@@ -102,7 +102,7 @@
       <div style="display: flex; flex-direction: column; gap: 40px;">
         
         <div>
-          <h3>About Me</h3>
+          <h3>✧ About Me</h3>
           <p>
             A current undergraduate interested a wide range of computer science disciplines.
             Quick learner with an excellent academic track record poised for versitility and improvement.
@@ -110,7 +110,7 @@
         </div>
 
         <div>
-          <h3>Education</h3>
+          <h3>✧ Education</h3>
           <p>
             Currently an undergraduate of Queens College, persuing a Bachelors in Computer Science.
           </p>
@@ -152,14 +152,6 @@
         <div class="projBackground" style="grid-area: x;"></div>
         <div class="projDetails" style="grid-area: x;">
           <h3>project 3</h3>
-          <p>sample</p><p>sample</p><p>sample</p><p>sample</p><p>sample</p>
-        </div>
-      </div>
-
-      <div class="proj">
-        <div class="projBackground" style="grid-area: x;"></div>
-        <div class="projDetails" style="grid-area: x;">
-          <h3>project 4</h3>
           <p>sample</p><p>sample</p><p>sample</p><p>sample</p><p>sample</p>
         </div>
       </div>
@@ -268,29 +260,32 @@
       <h2>✧ Contact Me</h2>
 
       <p>Inform me if you want more information on me.</p>
-      <p>Connect with me directly at <u><i>AndyCheng0814@gmail.com</i></u> . . . or leave a message.</p>
+      <p>Connect with me directly at <u><i>AndyCheng0814@gmail.com</i></u> . . . or me leave a message.</p>
       <br>
 
       <div style="display: flex; flex-direction: column; row-gap: 5px; width: max-content;">
+        <form action="index.php" method="POST">
 
-        <div id="contactGrid">
-          <p>Your Name: </p>
-          <form><input type="text" placeholder="John Doe"></input></form>
-          
-          <p>Email: </p>
-          <form><input type="email" placeholder="JohnDoe@gmail.com"></input></form>
-          
-          <p>Message: </p>
-          <textarea placeholder="Hello..."></textarea>
-        </div>
+          <div id="contactGrid">
+            <label for="inputName"><p>Your Name: </p></label>
+            <input id="inputName" type="text" placeholder="John Doe" required></input>
+            
+            <label for="inputEmail"><p>Email: </p></label>
+            <input id="inputEmail" type="email" placeholder="JohnDoe@gmail.com" required></input>
+            
+            <label for="inputMessage"><p>Message: </p></label>
+            <textarea id="inputMessage" placeholder="Hello..." required></textarea>
+          </div>
 
-        <div style="display: flex; justify-content: end;">
-          <a href="" target="_blank">
-            <button style="margin-top: 10px;"><p>Send Message</p></button>
-          </a>
-        </div>
+          <div style="display: flex; justify-content: end; margin-top: 5px;">
+            <button>
+              <p>Send Message</p>
+            </button>
+          </div>
 
+        </form>
       </div>
+
     </section>
 
   </main>
