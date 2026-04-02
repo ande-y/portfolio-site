@@ -162,7 +162,7 @@
 
     <section id="certifications">
       <h2>✧ Certifications</h2>
-      <div style="display: flex; justify-content: space-between; gap: 20px; max-width: inherit;">
+      <div id="certGrid">
         
         <div class="cert">
           <img src="media/temp cert.png">
@@ -258,44 +258,41 @@
     
     </div>
     <div class="break"></div>
+
     <section id="contactMe">
       <h2>✧ Contact Me</h2>
 
       <p>Inform me if you want more information on me.</p>
-      <!-- <p>Connect with me directly at <span id="copyEmail">AndyCheng0814@gmail.com</span></p>
-      <br> -->
-      <p>Connect with me directly at <span id="copyEmail" onclick="copyEmail()">AndyCheng0814@gmail.com</span> . . . or me leave a message.</p>
+      <p>
+        Connect with me directly at
+        <span id="copyEmail" onclick="copyEmail()">AndyCheng0814@gmail.com</span>
+      </p>
+      <p>. . . or me leave a message.</p>
       <br>
 
-      <div style="width: max-content;">
+      <form id="contactGrid">
+        <label for="inputName"><p>Name: </p></label>
+        <input id="inputName" type="text" placeholder="John Doe" required></input>
+        
+        <label for="inputEmail"><p>Email: </p></label>
+        <input id="inputEmail" type="email" placeholder="JohnDoe@gmail.com" required></input>
+        
+        <label for="inputMessage"><p>Message: </p></label>
+        <textarea id="inputMessage" placeholder="Hello..." required></textarea>
+      
+        <div></div>
+        <div style="display: flex; justify-content: end; column-gap: 15px;">
+          <button type="reset"><p>Clear</p></button>
+          <button type="button" onclick="sendMsg()"><p>Send Message</p></button>
+        </div>
+      </form>
 
-        <form id="contactGrid">
-
-            <label for="inputName"><p>Name: </p></label>
-            <input id="inputName" type="text" placeholder="John Doe" required></input>
-            
-            <label for="inputEmail"><p>Email: </p></label>
-            <input id="inputEmail" type="email" placeholder="JohnDoe@gmail.com" required></input>
-            
-            <label for="inputMessage"><p>Message: </p></label>
-            <textarea id="inputMessage" placeholder="Hello..." required></textarea>
-          
-            <div></div>
-            <div style="display: flex; justify-content: end;">
-              <button type="sumbit"><p>Send Message</p></button>
-            </div>
-
-        </form>
-
-        <p id="inputResponse"></p>
-
-      </div>
+      <p id="inputResponse">&nbsp;</p>
 
     </section>
     <div class="break"></div>
 
   </main>
-
 
   <footer>
     <section id="footerFrame">
@@ -324,7 +321,7 @@
           </a>
         </div>
 
-        <img src="icons/site icon.png" style="max-width: 80px; max-height: 80px;">
+        <img id="siteIcon" src="icons/site icon.png" onclick="scrollPage('hero')">
       </div>
       
       <div id="footerInfo">

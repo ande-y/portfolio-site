@@ -14,11 +14,6 @@
 #hero > img {
     min-width: 100vw;
 }
-@media (max-width: 1000px){
-    #hero > img {
-        min-height: 100vh;
-    }
-}
 
 #name {
     display: flex;
@@ -32,7 +27,7 @@
     text-align: end;
     margin: 0px 80px 40px 0px;
     
-    color: white;
+    color: rgb(255, 255, 255);
     mix-blend-mode: difference;
 }
 
@@ -79,4 +74,15 @@
 }
 .thin {
     -webkit-text-stroke: .1px black;
+}
+
+
+@media (max-width: 1000px){
+    #hero > img {
+        min-height: 100vh;
+    }
+    #name h1{
+        text-align: end;
+        margin: 0px 50px 40px 0px;
+    }
 }

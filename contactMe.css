@@ -2,6 +2,8 @@
     display: grid; 
     grid-template-columns: min-content auto;
     grid-gap: 10px;
+    width: 45vw;
+    min-width: 700px;
 }
 #contactGrid > label > p {
     margin-top: 5px;
@@ -14,16 +16,13 @@ input, textarea {
     border: solid black 2px;
     padding: 3px 5px 0px 5px;
 
-    width: 40vw;
-    min-width: 500px;
-
     font-family: Overpass;
-    font-size: 1.1rem;
-    line-height: 1.8rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
 }
 textarea {
     resize: none;
-    height: 150px;
+    height: 180px;
 }
 
 #copyEmail {
@@ -41,6 +40,9 @@ textarea {
     #contactGrid {
         grid-template-columns: auto;
         grid-gap: 0px;
+        width: 100%;
+        /* placeholder value below */
+        min-width: 0;
     }
     #contactGrid > label > p {
         margin-top: 15px;
@@ -49,4 +51,15 @@ textarea {
     #contactGrid button {
         margin-top: 15px;
     }
+    input, textarea {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+    }
+}
+@media (max-width: 600px){
+    input, textarea {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
 }

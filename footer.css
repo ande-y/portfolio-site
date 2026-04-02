@@ -39,6 +39,11 @@ footer {
     text-align: right;
 }
 
+#siteIcon {
+    max-width: 80px; 
+    max-height: 80px;
+}
+
 #footerInfo {
     display: flex; 
     justify-content: space-between;
@@ -52,7 +57,13 @@ footer {
     #socials {
         grid-template-columns: auto;
     }
-
+    #socials img {
+        height: 35px;
+    }
+    #siteIcon {
+        max-width: 65px; 
+        max-height: 65px;
+    }
     #footerInfo {
         flex-direction: column;
     }

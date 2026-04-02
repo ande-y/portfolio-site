@@ -1,3 +1,9 @@
+#certGrid {
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    gap: 20px; 
+}
+
 .cert {
     border: solid black 2px;
     padding: 20px 20px 15px 20px;
@@ -14,11 +20,15 @@
 .cert > div > p {
     margin-top: 0px;
     font-size: 1.1rem;
-    /* color: rgsb(128, 128, 128); */
 }
 
 @media (max-width: 1000px){
-    #certifications > div {
-        flex-direction: column;
+    #certGrid {
+        grid-template-columns: auto auto;
+    }
+}
+@media (max-width: 600px){
+    #certGrid {
+        grid-template-columns: auto;
     }
 }
