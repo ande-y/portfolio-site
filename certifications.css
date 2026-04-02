@@ -4,7 +4,7 @@
 }
 .cert > img {
     margin-bottom: 10px;
-    max-width: 100%; 
+    max-width: 100%;
     box-shadow: black 0px 0px 10px;
 }
 .cert > div {
@@ -15,4 +15,10 @@
     margin-top: 0px;
     font-size: 1.1rem;
     /* color: rgsb(128, 128, 128); */
+}
+
+@media (max-width: 1000px){
+    #certifications > div {
+        flex-direction: column;
+    }
 }

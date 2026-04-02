@@ -6,10 +6,18 @@
     overflow: hidden;
     mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
-
 #hero > * {
     position: relative;
     grid-area: x; 
+}
+
+#hero > img {
+    min-width: 100vw;
+}
+@media (max-width: 1000px){
+    #hero > img {
+        min-height: 100vh;
+    }
 }
 
 #name {

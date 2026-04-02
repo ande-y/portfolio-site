@@ -38,3 +38,25 @@ footer {
     color: white;
     text-align: right;
 }
+
+#footerInfo {
+    display: flex; 
+    justify-content: space-between;
+}
+#footerInfo p:nth-child(2){
+    text-align: end;
+}
+
+
+@media (max-width: 1000px){
+    #socials {
+        grid-template-columns: auto;
+    }
+
+    #footerInfo {
+        flex-direction: column;
+    }
+    #footerInfo p:nth-child(2){
+        text-align: left;
+    }
+}
