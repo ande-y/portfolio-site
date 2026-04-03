@@ -3,17 +3,20 @@
     align-items: center;
     gap: 80px;
 }
-
-#photo {
-    width: fit-content;
+#aboutMe > img {
+    width: 350px; 
 }
-#photo img {
-    min-width: 300px;
-}
-
 
 @media (max-width: 1000px){
     #aboutMe {
         flex-direction: column;
+    }
+    #aboutMe > img {
+        width: 50%;
+    }
+}
+@media (max-width: 400px){
+    #aboutMe > img {
+        width: 80%;
     }
 }

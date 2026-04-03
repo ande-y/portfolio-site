@@ -27,6 +27,7 @@ function copyEmail(){
 
 const form = document.getElementById("contactGrid");
 const response = document.getElementById("inputResponse");
+// import { dns } from 'dns';
 
 function sendMsg(){
     const inputName = document.getElementById("inputName").value;
@@ -34,11 +35,41 @@ function sendMsg(){
     const inputMessage = document.getElementById("inputMessage").value;
     console.log(`${inputName}, ${inputEmail}, ${inputMessage}`);
 
+    // no empty fields
     if (inputName === "" || inputEmail === "" || inputMessage === ""){
-        response.textContent = 'no empty feilds.';
-        clearResponse();
+        displayText('No empty feilds.', "red");
         return;
     }
+
+    // check against special characters in name
+    if (! /([a-z]|[A-Z]| )+/.test(inputName)){
+        displayText("Invalid name.", "red");
+        throw new Error("Invalid name.");
+    }
+
+    function invalidEmail(){
+        displayText("Invalid email.", "red");
+        throw new Error("Invalid email.");
+    }
+
+    // emails may not start with '.' or have ".."
+    if (inputEmail[0] == "." || inputEmail.includes("..")) invalidEmail();
+
+    // emails may only have 1 '@'
+    if (! /[^@]+@[^@]+/.test(inputEmail)) invalidEmail();
+
+    const domain = (inputEmail.split("@"))[1].toLowerCase();
+    console.log(`[${domain}]`);
+    // email domain may only have a-z 0-9 or '-' & be separated by '.'
+    if (! /([a-z]|\d|-|.)+\.([a-z]|\d|-|.)+/.test(domain)) invalidEmail();
+    
+//     // verify if domain exists
+//     dns.resolve(email[1], (err, records) => {
+//         if (err) invalidEmail();
+//         else continueSending();
+//     });
+// }
+// function continueSending(){
 
     const formData = new FormData(form);
 
@@ -50,20 +81,21 @@ function sendMsg(){
     .then(response => response.json()) // Assuming the server responds with JSON
     .then(data => {
         // Handle the server's response
-        response.textContent = 'Success! Form submitted.';
-        clearResponse();
+        displayText('Form submitted.', "green");
         console.log(data);
         form.reset(); // Optionally, reset the form fields
     })
     .catch(error => {
         // Handle any errors during the fetch operation
-        response.textContent = 'An error occurred. Please try again.';
-        clearResponse();
+        displayText('Error. Try again.', "red");
         console.error('Error:', error);
     });
 }
 
-function clearResponse(){
+function displayText(text, color){
+    response.style = `color: ${color}`;
+    response.textContent = text;
+
     setTimeout(() => {
         response.textContent = "\xa0";
     }, 3000)

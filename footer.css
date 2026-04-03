@@ -71,3 +71,12 @@ footer {
         text-align: left;
     }
 }
+@media (max-width: 400px){
+    #socials img {
+        height: 30px;
+    }
+    #siteIcon {
+        max-width: 55px; 
+        max-height: 55px;
+    }
+}
