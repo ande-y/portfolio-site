@@ -98,5 +98,5 @@ function displayText(text, color){
 
     setTimeout(() => {
         response.textContent = "\xa0";
-    }, 3000)
+    }, 2000)
 }

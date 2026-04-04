@@ -1,39 +1,74 @@
 .proj {
     display: grid;
     grid-template-areas: "x";
+    overflow: hidden;
 
-    height: 70px;
+    height: 90px;
     padding: 0px 0px 20px 0px;
 
-    /* overflow: hidden; */
-    
     transition: all .2s ease-out;
 }
 .proj:hover {
     height: 40vh;
 }
 
-.projBackground {
+.projBG {
     height: inherit;
 
     z-index: -1;
-    /* background: linear-gradient(rgba(0, 0, 0, 0.25) 0%, transparent 100%);  */
     mask-image: linear-gradient(black 70%, transparent 100%);
-
-    transition: all .2s ease-out;
+    
+    filter: blur(10px);
 }
-.projBackground > img {
+.proj:hover .projBG {
+    filter: blur(0px);
+}
+.projBG > img ,
+.projBG > video {
+    position: relative;
     width: 100%;
+    top: -15%;
 }
 
 .projDetails {
     overflow: hidden;
     padding: 20px;
 }
+.projDetails > h3 {
+    /* width: max-content;
+    padding: 10px 20px 10px 20px;
+    backdrop-filter: blur(20px);  */
+    color: transparent;
+    mix-blend-mode: difference;
+    -webkit-text-stroke: 2px white;
+}
 
 .projTextBackdrop {
-    padding: 10px 20px 10px 20px;
-    backdrop-filter: blur(15px); 
+    display: none;
 
-    /* text-shadow: white 0px 0px 5px; */
+    padding: 5px 10px 5px 10px;
+    backdrop-filter: blur(30px); 
+
+    color: white;
+    text-shadow: 0px 0px 3px black;
+}
+.proj:hover .projTextBackdrop {
+    display: block;
+}
+
+@media (max-width: 1000px){
+    .proj:hover .projBG > img ,
+    .proj:hover .projBG > video {
+        width: 133%;
+        min-height: 100%;
+        top: 0;
+        left: -16.5%;
+    }
+}
+@media (max-width: 600px){
+    .proj:hover .projBG > img ,
+    .proj:hover .projBG > video {
+        width: 166%;
+        left: -33%;
+    }
 }
