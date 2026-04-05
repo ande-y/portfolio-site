@@ -92,7 +92,7 @@ p {
         line-height: 1.5rem;
     }
 }
-@media (max-width: 400px){
+@media (max-width: 450px){
     h1 {
         font-size: 2.5rem;
     }
@@ -152,8 +152,8 @@ button:hover {
     backdrop-filter: blur(15px);
 }
 button img {
-    width: 35px;
-    margin-right: 5px;
+    width: 30px;
+    margin-right: 8px;
 }
 button:hover img {
     filter: invert(100%);

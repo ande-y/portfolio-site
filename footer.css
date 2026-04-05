@@ -71,7 +71,7 @@ footer {
         text-align: left;
     }
 }
-@media (max-width: 400px){
+@media (max-width: 450px){
     #socials img {
         height: 30px;
     }
