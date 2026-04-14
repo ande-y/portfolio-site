@@ -118,10 +118,9 @@ div.break {
 
 a {
     text-decoration: none;
-    /* the properties below are needed when <a> encases <button>
-    otherwise the hyperlink will overextend the bounds of <button> 
-    this only occurs when the inner <button> is using display:flex
-    this appears to be a bug */
+    /* the properties below are needed when <a> encases <button> otherwise the hyperlink 
+    will overextend the bounds of <button> this only occurs when the inner <button> is 
+    using display:flex this appears to be a bug */
     display: flex; 
     width: min-content;
 }
@@ -131,12 +130,14 @@ a:visited {
 
 button {
     display: flex; 
+    align-items: center;
+    gap: 8px;
 
     width: max-content;
     
     border: transparent solid 2px;
     background-color: black;
-    padding: 0px 10px 0px 10px;
+    padding: 2px 10px 2px 10px;
     margin: 0px;
     
     font-weight: bold;
@@ -153,7 +154,6 @@ button:hover {
 }
 button img {
     width: 30px;
-    margin-right: 8px;
 }
 button:hover img {
     filter: invert(100%);

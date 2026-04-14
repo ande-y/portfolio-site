@@ -8,11 +8,12 @@
 
 #skillList > div {
     display: flex;
+    gap: 10px;
 
     border: solid black 2px;
     /* background-color: lightgray; */
     
-    padding: 5px 12px 5px 12px;
+    padding: 3px 10px 3px 10px;
 }
 #skillList img {
     /* border: solid red 2px; */
@@ -22,12 +23,11 @@
 #skillList span {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 
     /* border: solid green 2px; */
     max-width: 30px;
-    max-height: 30px;
-    margin-right: 10px;
+    max-height: auto;
 }
 
 #skillList p {

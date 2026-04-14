@@ -43,6 +43,9 @@ footer {
     max-width: 80px; 
     max-height: 80px;
 }
+#siteIcon:hover {
+    cursor: pointer;
+}
 
 #footerInfo {
     display: flex; 
