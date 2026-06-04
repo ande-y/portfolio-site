@@ -1,15 +1,15 @@
 /* FONT IMPORTS */
 
 @font-face {
-    src: url("fonts/Brigends Expanded.otf");
+    src: url("../fonts/Brigends Expanded.otf");
     font-family: Brigends;
 }
 @font-face {
-    src: url("fonts/Moderniz.otf");
+    src: url("../fonts/Moderniz.otf");
     font-family: Moderniz;
 }
 @font-face {
-    src: url("fonts/TT Travels Trial Medium.otf");
+    src: url("../fonts/TT Travels Trial Medium.otf");
     font-family: Travels;
 }
 

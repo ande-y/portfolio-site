@@ -7,23 +7,24 @@
   <title>Andy Cheng | Portfolio</title>
   <link rel="icon" type="image/jpg" href="icons/site icon.png">
 
-  <link rel="stylesheet" href="general.css">
-  <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="hero.css">
-  <link rel="stylesheet" href="aboutMe.css">
-  <link rel="stylesheet" href="projects.css">
-  <!-- <link rel="stylesheet" href="certifications.css"> -->
-  <link rel="stylesheet" href="skills.css">
-  <link rel="stylesheet" href="creative.css">
-  <link rel="stylesheet" href="contactMe.css">
-  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="style/general.css">
+  <link rel="stylesheet" href="style/header.css">
+  <link rel="stylesheet" href="style/hero.css">
+  <link rel="stylesheet" href="style/aboutMe.css">
+  <link rel="stylesheet" href="style/projects.css">
+  <!-- <link rel="stylesheet" href="style/certifications.css"> -->
+  <link rel="stylesheet" href="style/skills.css">
+  <link rel="stylesheet" href="style/creative.css">
+  <link rel="stylesheet" href="style/contactMe.css">
+  <link rel="stylesheet" href="style/footer.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  
+
+  <!-- NAVIGATION BAR -->
   <header>
     <div style="position: absolute;">
       <div id="menuContainer">
@@ -43,6 +44,8 @@
     </div>
   </header>
 
+
+  <!-- HERO SECTION -->
   <div id="hero">
     <img src="media/inverted.gif">
 
@@ -85,8 +88,10 @@
   </div>
   <div class="break"></div>
 
+
   <main>
     
+    <!-- ABOUT ME SECTION -->
     <section id="aboutMe">
       <!-- <img src="media/photo.jpeg"> -->
       <img src="media/yink.png">
@@ -115,7 +120,7 @@
             Currently an undergraduate of Queens College, persuing a Bachelors in Computer Science.
           </p>
           <br>
-          <a href="files/Andy Resume.pdf" target="_blank">
+          <a href="files/Resume.pdf" target="_blank">
             <button>
               <img src="icons/file.svg">
               <p>View Resume</p>
@@ -129,6 +134,7 @@
     <div class="break"></div>
 
 
+    <!-- PROJECTS SECTION -->
     <section id="projects">
       <h2>✧ Projects</h2>
 
@@ -153,10 +159,9 @@
             and link your Google Drive. Then wait for the download and start reading immediately!
           </p><p>
             Built with Node.js, web server using the MangaDex API, with Google OAuth 2.0 integration and token exchange.
-            Implemented token caching to reduce redundant web server requests and improve application efficiency.
           </p>
 
-          <a href="https://github.com/ande-y/" target="_blank">
+          <a href="https://github.com/ande-y/Manga-Downloader-Web-Application" target="_blank">
             <button>
               <img src="icons/github.svg">
               <p>Repo</p>
@@ -237,8 +242,9 @@
     </section>
     <div class="break"></div>
 
-<!-- 
-    <section id="certifications">
+
+    <!-- CERTIFICATIONS SECTION -->
+    <!-- <section id="certifications">
       <h2>✧ Certifications</h2>
       <div id="certGrid">
         
@@ -251,29 +257,12 @@
           </div>
         </div>
         
-        <div class="cert">
-          <img src="media/temp cert.png">
-          <p><b>Sample Text</b></p>
-          <div>
-            <p>Code Path</p>
-            <p>Date</p>
-          </div>
-        </div>
-        
-        <div class="cert">
-          <img src="media/temp cert.png">
-          <p><b>Sample Text</b></p>
-          <div>
-            <p>Code Path</p>
-            <p>Date</p>
-          </div>
-        </div>
-
       </div>    
     </section> 
-    <div class="break"></div>
- -->
+    <div class="break"></div> -->
 
+
+    <!-- SKILLS SECTION -->
     <section id="skills">
       <h2>✧ Technical Skills</h2>
 
@@ -302,6 +291,7 @@
     <div class="break"></div>
 
 
+    <!-- QUOTE SECTION -->
     <section id="quote">
       <h3 style="text-align: center;">functionality is great,</h3>
       <h3 style="text-align: center;">with eye candy, it's better.</h3>
@@ -309,7 +299,7 @@
     <div class="break"></div>
 
 
-    <!-- This is the creative section -->
+    <!-- CREATIVE SECTION -->
     <div style="overflow: hidden; max-height: min-content;">
 
       <div style="position: relative; z-index: -1;">
@@ -348,6 +338,7 @@
     <div class="break"></div>
 
 
+    <!-- CONTACT ME SECTION -->
     <section id="contactMe">
       <h2>✧ Contact Me</h2>
 
@@ -386,6 +377,7 @@
 
   </main>
 
+
   <footer>
     <section id="footerFrame">
 
@@ -423,6 +415,7 @@
     </section>
   </footer>
 
+  
   <script src = "script.js"></script>
 
 </body>
