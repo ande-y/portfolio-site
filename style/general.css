@@ -118,9 +118,9 @@ div.break {
 
 a {
     text-decoration: none;
-    /* the properties below are needed when <a> encases <button> otherwise the hyperlink 
-    will overextend the bounds of <button> this only occurs when the inner <button> is 
-    using display:flex this appears to be a bug */
+    /* properties below are needed 
+    scenario: <a> <button style="display:flex"> <a> 
+    issue: hyperlink will extend outside of <button>, this appears to be a bug */
     display: flex; 
     width: min-content;
 }
@@ -144,6 +144,10 @@ button {
     color: white;
 
     transition: all .2s ease-in-out;
+
+    img {
+        width: 30px;
+    }
 }
 button:hover {
     border: black solid 2px;
@@ -151,9 +155,6 @@ button:hover {
     background-color: rgba(255, 255, 255, 0.5);
     color: black;
     backdrop-filter: blur(15px);
-}
-button img {
-    width: 30px;
 }
 button:hover img {
     filter: invert(100%);

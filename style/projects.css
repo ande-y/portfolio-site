@@ -10,6 +10,10 @@
 }
 .proj:hover {
     height: 40vh;
+
+    .projBG {
+        filter: blur(0px);
+    }
 }
 
 .projBG {
@@ -20,56 +24,52 @@
     mask-image: linear-gradient(black 70%, transparent 100%);
     
     filter: blur(10px);
+
+    img, video {
+        position: relative;
+        width: 100%;
+        top: -15%;
+    }
 }
 .proj:hover .projBG {
-    filter: blur(0px);
-}
-.projBG > img ,
-.projBG > video {
-    position: relative;
-    width: 100%;
-    top: -15%;
-}
-.proj:hover .projBG > img,
-.proj:hover .projBG > video {
-    top: -50%;
+    > img, > video {
+        top: -50%;
+    }
 }
 
 .projInfo {
     overflow: hidden;
     grid-area: x;
     padding: 25px;
-}
-.projInfo > h3 {
-    /* width: max-content;
-    padding: 10px 20px 10px 20px;
-    backdrop-filter: blur(20px);  */
-    color: transparent;
-    mix-blend-mode: difference;
-    -webkit-text-stroke: 3px white;
-    text-shadow: 0px 0px 3px black, 0px 0px 3px black;
-}
 
-.projInfo > p {
-    display: none;
-    width: 50%;
+    > h3 {
+        /* width: max-content;
+        padding: 10px 20px 10px 20px;
+        backdrop-filter: blur(20px);  */
+        color: transparent;
+        mix-blend-mode: difference;
+        -webkit-text-stroke: 3px white;
+        text-shadow: 0px 0px 3px black, 0px 0px 3px black;
+    }
+    > p {
+        display: none;
+        width: 50%;
 
-    padding: 5px 10px 5px 10px;
-    backdrop-filter: blur(30px); 
+        padding: 5px 10px 5px 10px;
+        backdrop-filter: blur(30px); 
 
-    color: white;
-    text-shadow: 0px 0px 3px black, 0px 0px 3px black;
+        color: white;
+        text-shadow: 0px 0px 3px black, 0px 0px 3px black;
+    }
+    a {
+        margin-top: 10px;
+        display: none;
+    }
 }
-.proj:hover .projInfo > p {
-    display: block;
-}
-
-.projInfo a {
-    margin-top: 10px;
-    display: none;
-}
-.proj:hover .projInfo a {
-    display: block;
+.proj:hover .projInfo{
+    > p, a {
+        display: block;
+    }
 }
 
 
@@ -79,37 +79,42 @@
     }
 }
 @media (max-width: 1000px){
-    .projInfo > h3 {
-        -webkit-text-stroke: 2px white;
+    .projInfo {
+        > h3 {
+            -webkit-text-stroke: 2px white;
+        }
+        > p {
+            width: auto;
+        }
     }
-    .proj:hover .projBG > img ,
-    .proj:hover .projBG > video {
-        width: 133%;
-        min-height: 100%;
-        top: 0;
-        left: -16.5%;
-    }
-    .projInfo > p {
-        width: auto;
+    .proj:hover .projBG {
+        > img, > video {
+            width: 133%;
+            min-height: 100%;
+            top: 0;
+            left: -16.5%;
+        }
     }
 }
 @media (max-width: 600px){
     .proj:hover {
         height: 60vh;
     }
-    .proj:hover .projBG > img ,
-    .proj:hover .projBG > video {
-        width: 166%;
-        left: -33%;
+    .proj:hover .projBG { 
+        > img, > video {
+            width: 166%;
+            left: -33%;
+        }
     }
 }
 @media (max-width: 450px){
     .proj:hover {
         height: 60vh;
     }
-    .proj:hover .projBG > img ,
-    .proj:hover .projBG > video {
-        width: 200%;
-        left: -50%;
+    .proj:hover .projBG { 
+        > img, > video {
+            width: 200%;
+            left: -50%;
+        }
     }
 }

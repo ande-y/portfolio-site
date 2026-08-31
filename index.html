@@ -30,7 +30,7 @@
       <div id="menuContainer">
 
         <div style="padding: 5px 10px 2px 10px; margin-right: 8px; filter: invert(100%); aspect-ratio: 1/1;">
-          <img src="./icons/menu bars.svg">
+          <img loading="lazy" src="./icons/menu bars.svg">
         </div>
 
         <button onclick="scrollPage('aboutMe')"><p>About Me</p></button>
@@ -47,11 +47,11 @@
 
   <!-- HERO SECTION -->
   <div id="hero">
-    <img src="media/inverted.gif">
+    <img loading="lazy" src="media/inverted.gif">
 
     <div id="name"><h1>Andy Cheng</h1></div>
     
-    <div id="horizontalMarquee" class="outlined">
+    <div id="hMarq" class="outlined">
       <h2 class="thin">&nbsp;✧&nbsp;</h2><h2>Graphic Design</h2>
       <h2 class="thin">&nbsp;✧&nbsp;</h2><h2>UI/UX</h2>
       <h2 class="thin">&nbsp;✧&nbsp;</h2><h2>Full Stack</h2>
@@ -67,7 +67,7 @@
       <h2 class="thin">&nbsp;✧&nbsp;</h2><h2>Illustration</h2>
     </div>
 
-    <div id="verticalMarquee" class="outlined">
+    <div id="vMarq" class="outlined">
       <h2 class="thin">&nbsp;✧&nbsp;</h2><h2>C++</h2>
       <h2 class="thin">&nbsp;✧&nbsp;</h2><h2>Java</h2>
       <h2 class="thin">&nbsp;✧&nbsp;</h2><h2>Javascript</h2>
@@ -93,8 +93,8 @@
     
     <!-- ABOUT ME SECTION -->
     <section id="aboutMe">
-      <!-- <img src="media/photo.jpeg"> -->
-      <img src="media/yink.png">
+      <!-- <img loading="lazy" src="media/photo.jpeg"> -->
+      <img loading="lazy" src="media/yink.png">
 
       <div style="display: flex; flex-direction: column; gap: 40px;">
         
@@ -108,7 +108,7 @@
           <br>
           <a href="https://www.linkedin.com/in/andy-cheng-41405a20a/" target="_blank">
             <button>
-              <img src="icons/linkedin.svg">
+              <img loading="lazy" src="icons/linkedin.svg">
               <p>Linkedin</p>
             </button>
           </a>
@@ -122,7 +122,7 @@
           <br>
           <a href="files/Resume.pdf" target="_blank">
             <button>
-              <img src="icons/file.svg">
+              <img loading="lazy" src="icons/file.svg">
               <p>View Resume</p>
             </button>
           </a>
@@ -141,7 +141,7 @@
       <div style="display: flex; justify-content: center;">
         <a href="https://github.com/ande-y" target="_blank">
           <button>          
-            <img src="icons/github.svg">
+            <img loading="lazy" src="icons/github.svg">
             <p style="margin-top: 5px;">Github</p>
           </button>
         </a>
@@ -150,7 +150,7 @@
 
       <div class="proj">
         <div class="projBG">
-          <img src="media/placeholder.gif">
+          <img loading="lazy" src="media/placeholder.gif">
         </div>
         <div class="projInfo">
           <h3>Manga Downloader Web Application</h3>
@@ -163,7 +163,7 @@
 
           <a href="https://github.com/ande-y/Manga-Downloader-Web-Application" target="_blank">
             <button>
-              <img src="icons/github.svg">
+              <img loading="lazy" src="icons/github.svg">
               <p>Repo</p>
             </button>
           </a>
@@ -173,7 +173,7 @@
 
       <div class="proj">
         <div class="projBG">
-          <video src="media/platformer demo.mp4" autoplay muted loop nofullscreen></video>
+          <video loading="lazy" src="media/platformer demo.mp4" autoplay muted loop nofullscreen></video>
         </div>
         <div class="projInfo">
           <h3>2D Platformer Game</h3>
@@ -185,13 +185,13 @@
           <div style="display: flex; gap: 10px;">
             <a href="" target="_blank">
               <button>
-                <img src="icons/game-controller.svg">
+                <img loading="lazy" src="icons/game-controller.svg">
                 <p>Play</p>
               </button>
             </a>
             <a href="https://github.com/ande-y/STEP-course-game-demo" target="_blank">
               <button>
-                <img src="icons/github.svg">
+                <img loading="lazy" src="icons/github.svg">
                 <p>Repo</p>
               </button>
             </a>
@@ -202,7 +202,7 @@
 
       <div class="proj">
         <div class="projBG">
-          <img src="media/cmd game demo.png">
+          <img loading="lazy" src="media/cmd game demo.png">
         </div>
         <div class="projInfo">
           <h3>CommandLine-Interface Games</h3>
@@ -213,7 +213,7 @@
 
           <a href="https://github.com/ande-y/Various-Command-Line-Games" target="_blank">
             <button>
-              <img src="icons/github.svg">
+              <img loading="lazy" src="icons/github.svg">
               <p>Repo</p>
             </button>
           </a>
@@ -223,7 +223,7 @@
 
       <!-- <div class="proj">
         <div class="projBG">
-          <img src="media/placeholder.gif">
+          <img loading="lazy" src="media/placeholder.gif">
         </div>
         <div class="projInfo">
           <h3>sample</h3>
@@ -231,7 +231,7 @@
 
           <a href="" target="_blank">
             <button>
-              <img src="icons/github.svg">
+              <img loading="lazy" src="icons/github.svg">
               <p>Repo</p>
             </button>
           </a>
@@ -249,7 +249,7 @@
       <div id="certGrid">
         
         <div class="cert">
-          <img src="media/temp cert.png">
+          <img loading="lazy" src="media/temp cert.png">
           <p><b>Sample Text</b></p>
           <div>
             <p>Code Path</p>
@@ -268,24 +268,22 @@
 
       <h3>Languages</h3>
       <div id="skillList">
-        <div><span><img src="icons/c++.svg"></span><p>C++</p></div>
-        <div><span><img src="icons/java.svg"></span><p>Java</p></div>
-        <div><span><img src="icons/hmtl5.svg"></span><p>HMTL5</p></div>
-        <div><span><img src="icons/css3.svg"></span><p>CSS</p></div>
-        <div><span><img src="icons/javascript.svg"></span><p>JavaScript</p></div>
-        <div><span><img src="icons/mysql.svg"></span><p>MySQL</p></div>
-        <div><span><img src="icons/kotlin.svg"></span><p>Kotlin</p></div>
-        <div><span><img src="icons/godot.svg"></span><p>GDScript</p></div>
+        <div><span><img loading="lazy" src="icons/c++.svg"></span><p>C++</p></div>
+        <div><span><img loading="lazy" src="icons/java.svg"></span><p>Java</p></div>
+        <div><span><img loading="lazy" src="icons/hmtl5.svg"></span><p>HMTL5</p></div>
+        <div><span><img loading="lazy" src="icons/css3.svg"></span><p>CSS</p></div>
+        <div><span><img loading="lazy" src="icons/javascript.svg"></span><p>JavaScript</p></div>
+        <div><span><img loading="lazy" src="icons/mysql.svg"></span><p>MySQL</p></div>
+        <div><span><img loading="lazy" src="icons/godot.svg"></span><p>GDScript</p></div>
       </div>
       <br>
 
       <h3>Applications</h3>
       <div id="skillList">
-        <div><span><img src="icons/vscode.svg"></span><p>VSCode</p></div>
-        <div><span><img src="icons/vim.svg"></span><p>Vim</p></div>
-        <div><span><img src="icons/mysql.svg"></span><p>MySQL Workbench</p></div>
-        <div><span><img src="icons/godot.svg"></span><p>Godot Engine</p></div>
-        <div><span><img src="icons/android studio.svg"></span><p>Android Studio</p></div>
+        <div><span><img loading="lazy" src="icons/vscode.svg"></span><p>VSCode</p></div>
+        <div><span><img loading="lazy" src="icons/vim.svg"></span><p>Vim</p></div>
+        <div><span><img loading="lazy" src="icons/mysql.svg"></span><p>MySQL Workbench</p></div>
+        <div><span><img loading="lazy" src="icons/godot.svg"></span><p>Godot Engine</p></div>
       </div>
     </section>
     <div class="break"></div>
@@ -304,7 +302,7 @@
 
       <div style="position: relative; z-index: -1;">
         <div style="position: absolute;">
-          <img src="media/inverted.gif" style="min-width: 100vw;">
+          <img loading="lazy" src="media/inverted.gif" style="min-width: 100vw;">
         </div>
       </div>
 
@@ -317,18 +315,18 @@
         <br>
 
         <div id="skillList">
-          <div><span><img src="icons/powerpoint.svg"></span><p>PowerPoint</p></div>
-          <div><span><img src="icons/sketchbook.png"></span><p>Sketchbook</p></div>
-          <div><span><img src="icons/blender.svg"></span><p>Blender</p></div>
-          <div><span><img src="icons/aseprite.svg"></span><p>Asprite</p></div>
-          <!-- <div><span><img src=""></span><p>Google Slides</p></div>
-          <div><span><img src=""></span><p>Canva</p></div> -->
+          <div><span><img loading="lazy" src="icons/powerpoint.svg"></span><p>PowerPoint</p></div>
+          <div><span><img loading="lazy" src="icons/sketchbook.png"></span><p>Sketchbook</p></div>
+          <div><span><img loading="lazy" src="icons/blender.svg"></span><p>Blender</p></div>
+          <div><span><img loading="lazy" src="icons/aseprite.svg"></span><p>Asprite</p></div>
+          <!-- <div><span><img loading="lazy" src=""></span><p>Google Slides</p></div>
+          <div><span><img loading="lazy" src=""></span><p>Canva</p></div> -->
         </div>
         <br>
         
         <a href="https://www.artstation.com/igeon" target="_blank">
           <button>          
-            <img src="icons/artstation.svg">
+            <img loading="lazy" src="icons/artstation.svg">
             <p style="margin-top: 5px;">ArtStation</p>
           </button>
         </a>
@@ -377,34 +375,34 @@
 
   </main>
 
-
+  <!-- FOOTER SECTION -->
   <footer>
     <section id="footerFrame">
 
       <div style="display: flex; justify-content: space-between;">
         <div id="socials">
           <a href="https://github.com/ande-y" target="_blank">
-            <img src="icons/github.svg">
+            <img loading="lazy" src="icons/github.svg">
             <h4>Github</h4>
           </a>
 
           <a href="https://www.linkedin.com/in/andy-cheng-41405a20a/" target="_blank">
-            <img src="icons/linkedin.svg">
+            <img loading="lazy" src="icons/linkedin.svg">
             <h4>Linkedin</h4>
           </a>
 
           <a href="https://www.instagram.com/ander_boi/" target="_blank">
-            <img src="icons/instagram.svg">
+            <img loading="lazy" src="icons/instagram.svg">
             <h4>Instagram</h4>
           </a>
 
           <a href="https://www.artstation.com/igeon" target="_blank">
-            <img src="icons/artstation.svg">
+            <img loading="lazy" src="icons/artstation.svg">
             <h4>Artstation</h4>
           </a>
         </div>
 
-        <img id="siteIcon" src="icons/site icon.png" onclick="scrollPage('hero')">
+        <img loading="lazy" id="siteIcon" src="icons/site icon.png" onclick="scrollPage('hero')">
       </div>
       
       <div id="footerInfo">

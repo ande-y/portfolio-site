@@ -4,32 +4,31 @@
     /* justify-content: center; */
 
     gap: 10px;
-}
 
-#skillList > div {
-    display: flex;
-    gap: 10px;
+    > div {
+        display: flex;
+        gap: 10px;
 
-    border: solid black 2px;
-    /* background-color: lightgray; */
-    
-    padding: 3px 10px 3px 10px;
-}
-#skillList img {
-    /* border: solid red 2px; */
-    max-width: inherit;
-    max-height: inherit;
-}
-#skillList span {
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
+        border: solid black 2px;
+        /* background-color: lightgray; */
+        
+        padding: 3px 10px 3px 10px;
+    }    
+    img {
+        /* border: solid red 2px; */
+        max-width: inherit;
+        max-height: inherit;
+    }
+    span {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
 
-    /* border: solid green 2px; */
-    max-width: 30px;
-    max-height: auto;
-}
-
-#skillList p {
-    white-space: nowrap;
+        /* border: solid green 2px; */
+        max-width: 30px;
+        max-height: auto;
+    }
+    p {
+        white-space: nowrap;
+    }    
 }

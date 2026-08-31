@@ -19,6 +19,11 @@ header {
     border: black solid 2px;
 
     transition: all .3s ease-in-out;
+
+    p {
+        white-space: nowrap;
+        color: inherit;
+    }
 }
 #menuContainer:hover {
     padding: 10px 0px 10px 10px;
@@ -28,10 +33,6 @@ header {
     border: transparent solid 2px;
 }
 
-#menuContainer p {
-    white-space: nowrap;
-    color: inherit;
-}
 
 @media (max-width: 1000px){
     #menuContainer {

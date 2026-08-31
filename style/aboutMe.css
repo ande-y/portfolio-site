@@ -2,17 +2,19 @@
     display: flex;
     align-items: center;
     gap: 80px;
-}
-#aboutMe > img {
-    width: 350px; 
+
+    > img {
+        width: 350px; 
+    }
 }
 
 @media (max-width: 1000px){
     #aboutMe {
         flex-direction: column;
-    }
-    #aboutMe > img {
-        width: 50%;
+        
+        > img {
+            width: 50%;
+        }
     }
 }
 @media (max-width: 450px){
